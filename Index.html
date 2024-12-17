@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Guide App - Account Deletion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-functions.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://goldguideapp.com/logo.png" alt="Gold Guide Logo">
+        </div>
+        <h1>Account & Data Deletion Request</h1>
+        
+        <div class="info-box">
+            <h2>Before You Proceed</h2>
+            <p>By requesting account deletion:</p>
+            <ul>
+                <li>Your account will be permanently deleted</li>
+                <li>All your personal data will be removed</li>
+                <li>This action cannot be undone</li>
+                <li>Processing may take up to 7 days</li>
+            </ul>
+        </div>
+
+        <form id="deletionForm">
+            <div class="form-group">
+                <label for="email">Registered Email Address*</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="reason">Reason for Deletion (Optional)</label>
+                <textarea id="reason"></textarea>
+            </div>
+            <button type="submit" id="submitBtn">Request Deletion</button>
+        </form>
+
+        <div class="contact-info">
+            <p>Need help? Contact us at: <a href="mailto:support@goldguideapp.com">support@goldguideapp.com</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
